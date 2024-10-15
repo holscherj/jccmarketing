@@ -1,0 +1,23 @@
+/* define global styles and variables within this file */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+  }
+  
+  :root {
+    --primary: #2C3E50;
+    --secondary: #1ABC9C;
+    --accent: #E67E22;
+    --neutral-light: #ECF0F1;
+    --neutral-dark: #34495E;
+    --highlight: #27AE60;
+    --primary-font: "Lato";
+    --secondary-font: "Merriweather";
+  }
+  
+  a:visited, a:active, a:link {
+    text-decoration: none;
+  }
