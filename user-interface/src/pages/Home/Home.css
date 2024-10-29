@@ -1,0 +1,71 @@
+.landing-page {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #000000, #545454, #737373);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.navbar {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+}
+  
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+  
+.company-name {
+    font-size: 24px;
+}
+  
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+  
+.content {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+.left-column,
+.right-column {
+    width: 48%;
+}
+  
+.left-column img {
+    width: 100%;
+    height: auto;
+}
+  
+.headline {
+    font-size: 36px;
+    color: #fff;
+}
+  
+.tagline {
+    font-size: 18px;
+    color: #fff;
+}
+
+hr {
+    width: 90%;
+}

@@ -1,46 +1,38 @@
-import { useNavigate } from 'react-router-dom';
+import "./Home.css";
+import dots_img from "../../assets/dots.png";
+import logo_svg from "../../assets/logo.svg";
+import digital_marketing from "../../assets/digital-marketing.png"
 
 function Home() {
     return (
-        <>
-            <header id="header">
-                <span id='header-company'> JCC Marketing Group </span>
-                <span id='header-logo'> Logo </span>
-            </header>
-                <main id="main">
-                <section id="main-opening">
-                    <div id="main-welcome"> Welcome to JCC Marketing Group </div>
-                    <div id="main-tagline"> Providing the Northern Michigan area with marketing solutions of all kinds - for all businesses. </div>
-                    <hr id="main-break"/>
-                </section>
-                <MainLinks />
-            </main>
-        </>
+    <>
+        <div className="landing-page">
+            <nav className="navbar">
+                <div className="logo">
+                    <img src={logo_svg} alt="Company Logo" />
+                    <span className="company-name">JCC Marketing Group</span>
+                </div>
+                <div className="nav-links">
+                    <a href="/about">About</a>
+                    <a href="/getstarted">Services</a>
+                    <a href="/contact">Contact</a>
+                </div>
+            </nav>
+
+            <div className="content">
+                <div className="left-column">
+                    <img src={dots_img} alt="Intro Image" />
+                </div>
+                <div className="right-column">
+                    <h1 className="headline"> Welcome to JCC Marketing </h1>
+                    <p className="tagline"> Providing Northern Michigan With Marketing Solutions of All Kinds - for All Businesses </p>
+                </div>
+            </div>
+
+            <hr />
+        </div>
+    </>
     );
 }
-
-function MainLinks() {
-    return (
-      <section id="main-links">
-        <MainLink name="About Us" path="/about" />
-        <MainLink name="Get Started" path="/getstarted" />
-        <MainLink name="Contact" path="/contact" />
-      </section>
-    );
-  }
-  
-  function MainLink({path, name}) {
-    const navigate = useNavigate();
-
-    const handleClick = () => {
-        navigate(path);
-    };
-
-    return (
-        <button className="main-link-button" onClick={handleClick}>
-        {name}
-        </button>
-    );
-  }
 
 export default Home;
