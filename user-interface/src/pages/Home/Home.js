@@ -13,7 +13,7 @@ function Home() {
 
     const navigate = useNavigate();
     const onContact = () => {
-        navigate("/jccmarketing/contact")
+        navigate("/contact")
     }
 
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -35,8 +35,8 @@ function Home() {
                     <div></div>
                 </div>
                 <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
-                    <a className="nav-link" href="/jccmarketing/pricing">Pricing</a>
-                    <a className="nav-link" href="/jccmarketing/contact">Contact</a>
+                    <a className="nav-link" href="/pricing">Pricing</a>
+                    <a className="nav-link" href="/contact">Contact</a>
                 </div>
             </nav>
 
