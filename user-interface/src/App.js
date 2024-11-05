@@ -11,8 +11,7 @@ function App() {
       <BrowserRouter basename='/jccmarketing'>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="about" element={<Pricing />} />
-          <Route path="getstarted" element={<GetStarted />} />
+          <Route path="pricing" element={<Pricing />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
