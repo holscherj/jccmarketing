@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.e0b3d0a6.css",
-    "main.js": "/static/js/main.383818d6.js",
-    "static/media/carson.jpg": "/static/media/carson.0f54b294bbf26c08dd18.jpg",
-    "static/media/cooper.jpg": "/static/media/cooper.e3302c4e0f4d4fec0a5f.jpg",
-    "static/media/jack.PNG": "/static/media/jack.12bf8f49d333175ce7cd.PNG",
-    "static/media/digital-marketing1.jpg": "/static/media/digital-marketing1.d25d47b7acd2e00f2d6b.jpg",
-    "static/media/dots.png": "/static/media/dots.e24b78fd577a48faac26.png",
-    "static/media/digital-marketing.jpg": "/static/media/digital-marketing.19f6c79a22da2aa682f6.jpg",
-    "static/media/logo.svg": "/static/media/logo.591fa10eef0a4917a77a46c312b7282b.svg",
-    "index.html": "/index.html",
-    "main.e0b3d0a6.css.map": "/static/css/main.e0b3d0a6.css.map",
-    "main.383818d6.js.map": "/static/js/main.383818d6.js.map"
+    "main.css": "/jccmarketing/static/css/main.e0b3d0a6.css",
+    "main.js": "/jccmarketing/static/js/main.3446f525.js",
+    "static/media/carson.jpg": "/jccmarketing/static/media/carson.0f54b294bbf26c08dd18.jpg",
+    "static/media/cooper.jpg": "/jccmarketing/static/media/cooper.e3302c4e0f4d4fec0a5f.jpg",
+    "static/media/jack.PNG": "/jccmarketing/static/media/jack.12bf8f49d333175ce7cd.PNG",
+    "static/media/digital-marketing1.jpg": "/jccmarketing/static/media/digital-marketing1.d25d47b7acd2e00f2d6b.jpg",
+    "static/media/dots.png": "/jccmarketing/static/media/dots.e24b78fd577a48faac26.png",
+    "static/media/digital-marketing.jpg": "/jccmarketing/static/media/digital-marketing.19f6c79a22da2aa682f6.jpg",
+    "static/media/logo.svg": "/jccmarketing/static/media/logo.591fa10eef0a4917a77a46c312b7282b.svg",
+    "index.html": "/jccmarketing/index.html",
+    "main.e0b3d0a6.css.map": "/jccmarketing/static/css/main.e0b3d0a6.css.map",
+    "main.3446f525.js.map": "/jccmarketing/static/js/main.3446f525.js.map"
   },
   "entrypoints": [
     "static/css/main.e0b3d0a6.css",
-    "static/js/main.383818d6.js"
+    "static/js/main.3446f525.js"
   ]
 }
