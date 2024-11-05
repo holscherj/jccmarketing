@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./Home.css";
 import dots_img from "../../assets/dots.png";
 import logo_svg from "../../assets/logo.svg";
@@ -8,6 +10,17 @@ import cooper from "../../assets/cooper.jpg";
 import jack from "../../assets/jack.PNG";
 
 function Home() {
+
+    const navigate = useNavigate();
+    const onContact = () => {
+        navigate("/contact")
+    }
+
+    const [isNavOpen, setIsNavOpen] = useState(false);
+    const toggleNav = () => {
+        setIsNavOpen(!isNavOpen);
+    };
+
     return (
     <>
         <div className="landing-page">
@@ -16,8 +29,13 @@ function Home() {
                     <img src={logo_svg} alt="Company Logo" />
                     <span className="company-name">JCC Marketing Group</span>
                 </div>
-                <div className="nav-links">
-                    <a href="/about"> Pricing </a>
+                <div className="hamburger" onClick={toggleNav}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
+                    <a href="/about">Pricing</a>
                     <a href="/contact">Contact</a>
                 </div>
             </nav>
@@ -132,7 +150,7 @@ function Home() {
                 schedule a meeting at the earliest possible convenience. We look forward to connecting
                 with you soon!
             </p>
-            <div className="contact-button">
+            <div className="contact-button" onClick={onContact}>
                 Get Started
             </div>
         </div>

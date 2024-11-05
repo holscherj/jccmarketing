@@ -15,6 +15,14 @@
     align-items: center;
     color: #fff;
 }
+
+.nav-links.open {
+    display: flex;
+}
+
+.hamburger {
+    display: none;
+}
   
 .logo {
     display: flex;
@@ -78,7 +86,7 @@
     width: 80%;
     display: flex;
     align-items: center;
-    margin-top: 40px;
+    justify-content: center;
     gap: 5rem;
 }
 
@@ -236,6 +244,11 @@
     font-weight: bold;
 }
 
+.contact-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .footer {
     width: 100%;
     height: 20vh;
@@ -257,25 +270,46 @@ hr {
 
 /* Media Queries for Mobile Devices */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     .landing-page {
         height: auto;
         padding: 20px;
     }
     
     .navbar {
-        flex-direction: column;
         align-items: flex-start;
+        position: relative;
     }
     
     .nav-links {
-        margin-top: 10px;
-        display: flex;
+        display: none;
         flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
     }
     
     .nav-links a {
         margin: 10px 0;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-top: 2px;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
     }
 
     .content {
@@ -347,9 +381,10 @@ hr {
     }
 
     .contact-button {
-        width: 80%;
-        height: auto;
+        width: 50%;
+        margin-left: 10px;
         padding: 10px;
+        transform: scale(1.05);
     }
 }
 
@@ -370,6 +405,14 @@ hr {
         font-size: 24px;
     }
 
+    .jcc-way {
+        height: 80vh;
+    }
+
+    .way-image {
+        display: none;
+    }
+
     .way-text-big, .offer-text p, .team-text p, .contact-text-big {
         font-size: 32px;
     }
@@ -386,6 +429,9 @@ hr {
 /* Adjustments for smaller elements and spacing */
 
 @media only screen and (max-width: 360px) {
+    .company-name {
+        font-size: 18px;
+    }
     .nav-links a {
         font-size: 14px;
     }
@@ -400,6 +446,7 @@ hr {
 
     .contact-button {
         width: 90%;
+        height: auto;
         padding: 8px;
     }
 } 
