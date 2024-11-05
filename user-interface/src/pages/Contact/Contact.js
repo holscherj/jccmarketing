@@ -9,19 +9,10 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsLoading(true);
-        fetch('https://formsubmit.co/holscherjackson@gmail.com', {
-            method: 'POST',
-            body: new FormData(e.target),
-        })
-        .then(response => {
-            if (response.ok) {
-                navigate('/');
-            } else {
-                console.error('Form submission failed');
-            }
-        })
-        .catch(error => console.error('Error:', error))
-        .finally(() => setIsLoading(false));
+        setTimeout(() => {
+            setIsLoading(false);
+            navigate("/");
+        }, 1000);
     };
 
     return (
@@ -35,7 +26,12 @@ function Contact() {
                     </p>
                 </div>
                 
-                <form className="contact-form" onSubmit={handleSubmit} >
+                <form 
+                    className="contact-form" 
+                    action="https://formsubmit.co/19a3314a9f3d6b98ac48d1be6d4692f6"
+                    method="POST"
+                    onSubmit={handleSubmit} 
+                >
                     <div className="form-group">
                         <label htmlFor="firstName">First Name <span>*</span></label>
                         <input type="text" id="firstName" name="firstName" required />
