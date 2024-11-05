@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Pricing.css';
 
 function Pricing() {
+
+    const navigate = useNavigate();
+    const onHome = () => {
+        navigate("/")
+    }
+
     return (
         <div className="pricing-page">
             <div className="pricing-header">
@@ -44,6 +51,10 @@ function Pricing() {
 
             <div className="custom-plan">
                 <p>If none of these plans meet your needs, we're happy to discuss a custom plan tailored specifically for your business. Contact us to learn more!</p>
+            </div>
+
+            <div className='return-home-button' onClick={onHome}>
+                Return Home
             </div>
 
             <hr />

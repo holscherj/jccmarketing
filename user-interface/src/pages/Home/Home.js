@@ -66,7 +66,7 @@ function Home() {
                     </p>
                 </div>
                 <div className="way-image">
-                    <img src={digital_marketing1}  />
+                    <img src={digital_marketing1}  alt="Digital Marketing" />
                 </div>
             </div>
         </div>

@@ -80,28 +80,30 @@
 
 .jcc-way {
     width: 100%;
-    height: 100vh;
+    padding: 40px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .way-container {
-    height: 80%;
     width: 80%;
+    max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5rem;
+    justify-content: space-between;
+    gap: 4rem;
 }
 
 .way-text {
-    width: 48%;
+    flex: 1;
+    text-align: left;
 }
 
 .way-text-big {
     font-size: 48px;
     color: black;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
 }
 
@@ -112,18 +114,22 @@
 }
 
 .way-image {
-    width: 48%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .way-image img {
     width: 100%;
     height: auto;
-    margin-left: 2vw;
+    max-width: 500px;
+    object-fit: cover;
+    border: solid #000000;
 }
 
 .what-we-offer {
     width: 100%;
-    height: 100vh;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +138,7 @@
 }
 
 .offer-text {
-    margin-top: 5rem;   
+    margin-top: 5rem;
 }
 
 .offer-text p {
@@ -140,27 +146,30 @@
 }
 
 .offer-container {
-    height: 80%;
     width: 80%;
+    max-width: 1200px;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 3rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
     margin-bottom: 50px;
 }
 
 .offer {
-    width: 30%;
-    height: auto;
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .offer img {
-    width: 80%;
+    width: 100%;
     height: auto;
+    object-fit: cover;
+    border: solid #000;
 }
 
 .offer p {
@@ -170,7 +179,7 @@
 
 .meet-the-team {
     width: 100%;
-    height: 100vh;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,30 +192,32 @@
 
 .team-text p {
     font-size: 48px;
-    margin: 3rem 0 3rem 0;
+    margin: 3rem 0;
 }
 
 .team-container {
     width: 80%;
-    height: 80%;
+    max-width: 1200px;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.team-member {
-    width: 30%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 2rem;
 }
 
+.team-member {
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 .team-member img {
-    width: 80%;
+    width: 100%;
     height: auto;
-    border: solid grey;
+    border: solid #000;
 }
 
 .team-member p {
@@ -317,9 +328,10 @@ hr {
     }
 
     .content {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         text-align: center;
+        margin-top: 40px;
     }
 
     .left-column, .right-column {
@@ -340,44 +352,26 @@ hr {
         gap: 2rem;
     }
 
-    .way-text, .way-image {
+    .way-text,
+    .way-image {
         width: 100%;
+        text-align: center;
     }
 
     .way-image img {
-        width: 80%;
-        max-width: 400px;
-        height: auto;
-        margin: 0 auto;
-        display: block;
+        max-width: 80%;
     }
 
-    .what-we-offer {
-        height: auto;
-        padding: 20px;
-    }
-
-    .offer-container {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .offer {
-        width: 100%;
-    }
-
-    .meet-the-team {
-        height: auto;
-        padding: 20px;
-    }
-
+    .offer-container,
     .team-container {
         flex-direction: column;
-        gap: 2rem;
+        align-items: center;
     }
 
+    .offer,
     .team-member {
         width: 100%;
+        max-width: 100%;
     }
 
     .contact {
@@ -410,18 +404,22 @@ hr {
     }
 
     .jcc-way {
-        height: 80vh;
+        padding: 20px 0;
     }
 
-    .way-image {
-        display: none;
-    }
-
-    .way-text-big, .offer-text p, .team-text p, .contact-text-big {
+    .way-text-big {
         font-size: 32px;
     }
 
-    .way-text-small, .offer p, .team-member p, .contact-text-small {
+    .way-text-small {
+        font-size: 16px;
+    }
+
+    .offer-text p, .team-text p, .contact-text-big {
+        font-size: 32px;
+    }
+
+    .offer p, .team-member p, .contact-text-small {
         font-size: 16px;
     }
 
@@ -446,6 +444,27 @@ hr {
 
     .tagline {
         font-size: 14px;
+    }
+
+    .jcc-way {
+        padding: 15px 0;
+    }
+
+    .way-text-big {
+        font-size: 28px;
+    }
+
+    .way-text-small {
+        font-size: 14px;
+    }
+
+    .way-image img {
+        max-width: 70%;
+    }
+
+    .offer-text p,
+    .team-text p {
+        font-size: 28px;
     }
 
     .contact-button {
