@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import "./Home.css";
 import dots_img from "../../assets/dots.png";
 import logo_svg from "../../assets/logo.svg";
@@ -35,8 +35,8 @@ function Home() {
                     <div></div>
                 </div>
                 <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
-                    <a className="nav-link" href="/pricing">Pricing</a>
-                    <a className="nav-link" href="/contact">Contact</a>
+                    <Link className="nav-link" to="/pricing">Pricing</Link>
+                    <Link className="nav-link" to="/contact">Contact</Link>
                 </div>
             </nav>
 
