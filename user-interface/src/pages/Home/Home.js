@@ -130,9 +130,7 @@ function Home() {
                 <div className="team-member">
                     <img src={jack}/>
                     <p>
-                        Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-                        Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
-                        Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet
+                        Jack
                     </p>
                 </div>
             </div>
