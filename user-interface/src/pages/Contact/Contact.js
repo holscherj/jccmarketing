@@ -9,7 +9,7 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsLoading(true);
-        fetch('https://formsubmit.co/jacksonholscher@gmail.com', {
+        fetch('https://formsubmit.co/holscherjackson@gmail.com', {
             method: 'POST',
             body: new FormData(e.target),
         })

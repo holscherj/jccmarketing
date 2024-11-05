@@ -200,24 +200,25 @@
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: space-between;
     gap: 2rem;
+    flex-direction: column;
+    align-items: center;
 }
 
 .team-member {
-    flex: 1 1 calc(33.333% - 2rem);
-    max-width: calc(33.333% - 2rem);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    max-width: 70%;
 }
 
 .team-member img {
     width: 100%;
-    height: auto;
-    border: solid #000;
+    height: 700px;
+    object-fit: cover;
+    border: solid grey;
 }
 
 .team-member p {
@@ -362,16 +363,18 @@ hr {
         max-width: 80%;
     }
 
-    .offer-container,
-    .team-container {
+    .offer-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .offer,
-    .team-member {
+    .offer {
         width: 100%;
         max-width: 100%;
+    }
+
+    .team-member img {
+        height: 500px;
     }
 
     .contact {
@@ -413,6 +416,10 @@ hr {
 
     .way-text-small {
         font-size: 16px;
+    }
+
+    .team-member img {
+        height: 300px;
     }
 
     .offer-text p, .team-text p, .contact-text-big {
