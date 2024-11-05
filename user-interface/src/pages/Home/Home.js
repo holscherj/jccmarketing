@@ -35,8 +35,8 @@ function Home() {
                     <div></div>
                 </div>
                 <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
-                    <a href="/about">Pricing</a>
-                    <a href="/contact">Contact</a>
+                    <a className="nav-link" href="/about">Pricing</a>
+                    <a className="nav-link" href="/contact">Contact</a>
                 </div>
             </nav>
 

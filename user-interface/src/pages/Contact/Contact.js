@@ -68,6 +68,14 @@ function Contact() {
 
                 {isLoading && <div className="loading-spinner"></div>}
             </div>
+
+
+            <div className="footer-contact">
+                <hr />
+                <div className="footer-title-contact">
+                    <p> &copy; JCC Marketing Group, LLC 2024 </p>
+                </div>
+            </div>
         </div>
     );
 }

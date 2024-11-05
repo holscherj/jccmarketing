@@ -1,6 +1,6 @@
 import './App.css';
 import Home from "./pages/Home/Home";
-import About from "./pages/About/About"
+import Pricing from "./pages/Pricing/Pricing";
 import GetStarted from './pages/GetStarted/GetStarted';
 import Contact from "./pages/Contact/Contact";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="about" element={<Pricing />} />
           <Route path="getstarted" element={<GetStarted />} />
           <Route path="contact" element={<Contact />} />
         </Routes>

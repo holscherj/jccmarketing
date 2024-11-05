@@ -20,6 +20,10 @@
     display: flex;
 }
 
+.nav-link {
+    color: #fff;
+}
+
 .hamburger {
     display: none;
 }
