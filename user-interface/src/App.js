@@ -7,13 +7,13 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename='/jccmarketing'>
+      <HashRouter basename='/jccmarketing'>
         <Routes>
           <Route index element={<Home />} />
           <Route path="pricing" element={<Pricing />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
