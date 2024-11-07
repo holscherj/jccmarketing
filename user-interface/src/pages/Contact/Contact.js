@@ -12,7 +12,7 @@ function Contact() {
         setTimeout(() => {
             setIsLoading(false);
             navigate("/");
-        }, 1000);
+        }, 5000);
     };
 
     return (
