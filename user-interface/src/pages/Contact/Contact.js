@@ -28,7 +28,7 @@ function Contact() {
                 
                 <form 
                     className="contact-form" 
-                    action="https://formsubmit.co/19a3314a9f3d6b98ac48d1be6d4692f6"
+                    action="https://formsubmit.co/holscherjackson@gmail.com"
                     method="POST"
                     onSubmit={handleSubmit} 
                 >
