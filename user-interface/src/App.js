@@ -7,7 +7,7 @@ import {HashRouter, Routes, Route} from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <HashRouter basename='/jccmarketing'>
+      <HashRouter>
         <Routes>
           <Route index element={<Home />} />
           <Route path="pricing" element={<Pricing />} />
