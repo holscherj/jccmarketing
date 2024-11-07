@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jccmarketing/static/css/main.e0b3d0a6.css",
-    "main.js": "/jccmarketing/static/js/main.09dee431.js",
+    "main.js": "/jccmarketing/static/js/main.c6d54963.js",
     "static/media/carson.jpg": "/jccmarketing/static/media/carson.0f54b294bbf26c08dd18.jpg",
     "static/media/cooper.jpg": "/jccmarketing/static/media/cooper.e3302c4e0f4d4fec0a5f.jpg",
     "static/media/jack.PNG": "/jccmarketing/static/media/jack.12bf8f49d333175ce7cd.PNG",
@@ -11,10 +11,10 @@
     "static/media/logo.svg": "/jccmarketing/static/media/logo.591fa10eef0a4917a77a46c312b7282b.svg",
     "index.html": "/jccmarketing/index.html",
     "main.e0b3d0a6.css.map": "/jccmarketing/static/css/main.e0b3d0a6.css.map",
-    "main.09dee431.js.map": "/jccmarketing/static/js/main.09dee431.js.map"
+    "main.c6d54963.js.map": "/jccmarketing/static/js/main.c6d54963.js.map"
   },
   "entrypoints": [
     "static/css/main.e0b3d0a6.css",
-    "static/js/main.09dee431.js"
+    "static/js/main.c6d54963.js"
   ]
 }
