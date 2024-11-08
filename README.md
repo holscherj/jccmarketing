@@ -13,5 +13,3 @@ Update copy and stock images
 Logo
 
 Figure out pricing
-
-Favicon

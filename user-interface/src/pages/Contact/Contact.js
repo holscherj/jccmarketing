@@ -9,10 +9,11 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsLoading(true);
-        setTimeout(() => {
+        document.getElementById("hiddenIframe").onload = () => {
             setIsLoading(false);
             navigate("/");
-        }, 5000);
+        };
+        e.target.submit();
     };
 
     return (
@@ -30,6 +31,8 @@ function Contact() {
                     className="contact-form" 
                     action="https://formsubmit.co/holscherjackson@gmail.com"
                     method="POST"
+                    target="hiddenIframe"
+                    onSubmit={handleSubmit}
                 >
                     <div className="form-group">
                         <label htmlFor="firstName">First Name <span>*</span></label>
@@ -57,11 +60,15 @@ function Contact() {
                     </div>
 
                     <button type="submit" className="submit-button" disabled={isLoading}>
-                        {isLoading ? 'Submitting...' : 'Submit'}
+                        {isLoading ? 'Loading...' : 'Submit'}
                     </button>
                 </form>
 
-                {isLoading && <div className="loading-spinner"></div>}
+                <iframe 
+                    id="hiddenIframe"
+                    name="hiddenIframe"
+                    style={{display: "none"}}
+                />
             </div>
 
 
